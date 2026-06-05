@@ -15,7 +15,7 @@
 
       <h2>Elige tu mascota:</h2>
 
-      <label for="hipodoge">🐶Hipodoge</label>
+      <label for="hipodoge">🦛Hipodoge</label>
       <input type="radio" name="mascota" id="hipodoge"/>
 
       <label for="Capipepo">🫏Capipepo</label>
@@ -24,6 +24,7 @@
       <label for="Ratigueya">🐀Ratigueya</label>
       <input type="radio" name="mascota" id="Ratigueya"/>
       <button id="boton-mascota">Seleccionar➡️</button>
+      
       <!--input type="radio" name="mascota" id="Langostelvis"/>
       <input type="radio" name="mascota" id="Tucapalma"/>
       <input type="radio" name="mascota" id="Pyros"/-->
@@ -35,14 +36,15 @@
         <button>Langostelvis 🦞</button>
         <button>Tucapalma 🐦</button>
         <button>Pyros ❤️‍🔥</button>
-        </div-->
+      </div-->
 
     </section>
 
     <section id="seleccionar-ataque">
       <h2>Elige tu ataque:</h2>
-      <p>Tu mascota tiene <span>3</span> vidas</p>
-      <p>La mascota del enemigo tiene <span>3</span> vidas</p>
+
+      <p>Tu mascota <span id="mascota-jugador"></span> tiene <span>3</span> vidas</p>
+      <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span>3</span> vidas</p>
       <p>
         <button id="boton-fuego">Fuego 🔥</button>
         <button id="boton-agua">Agua 💧</button>
