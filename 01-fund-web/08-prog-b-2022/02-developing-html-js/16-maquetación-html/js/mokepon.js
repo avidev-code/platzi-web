@@ -16,6 +16,10 @@ function iniciarJuego() {
 
   let botonTierra = document.getElementById('boton-tierra')
   botonTierra.addEventListener('click', ataqueTierra)
+
+  let botonReiniciar = document.getElementById('boton-reiniciar')
+  botonReiniciar.addEventListener('click', reiniciarJuego)
+
 }
 
 function seleccionarMascotaJugador() {
@@ -134,6 +138,19 @@ function crearMensajeFinal(resultadoFinal) {
   parrafo.innerHTML = resultadoFinal
 
   sectionMensajes.appendChild(parrafo)
+
+  let botonFuego = document.getElementById('boton-fuego')
+  let botonAgua = document.getElementById('boton-agua')
+  let botonTierra = document.getElementById('boton-tierra')
+
+  botonFuego.disabled = true
+  botonAgua.disabled = true
+  botonTierra.disabled = true
+  
+}
+
+function reiniciarJuego() {
+  location.reload()
 }
 
 function aleatorio(min, max) {
