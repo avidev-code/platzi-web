@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.game-heading {
+  margin-top:24px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.game-heading .title {
+  color:cornflowerblue;
+  font-size: 3rem;
+  margin: 0;
+}
+.game-heading .elements {
+  font-size: 3rem;
+}
