@@ -4,7 +4,34 @@
   padding: 0;
 }
 
+body {
+  font-family: 'goldman', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0D1117;
+  color: #333;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.elements {
+  display: flex;
+  padding: 8px;
+  gap: 16px;
+  margin-top: 16px;
+}
+.elements div {
+  font-size: 3.2rem;
+  border: 1px solid #1b222c;
+  padding: 8px;
+  border-radius: 100%;
+}
+
 .game-heading {
+  padding: 16px;
+  border-radius: 8px;
+  width: 80%;
   margin-top:24px;
   margin-bottom: 32px;
   display: flex;
@@ -13,10 +40,138 @@
   justify-content: center;
 }
 .game-heading .title {
-  color:cornflowerblue;
+  color: #A8F20B;
   font-size: 3rem;
   margin: 0;
 }
 .game-heading .elements {
   font-size: 3rem;
+}
+
+#seleccionar-mascota {
+  padding: 32px;
+  border: 1px solid #29313D;
+  background-color: #141921;
+  border-radius: 32px;
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.pet-title {
+  color:#82BC06;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.pets-section {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  width: 100%;
+  justify-content: center;
+}
+.pet-type {
+  padding: 16px;
+  width: 100%;
+  border: 1px solid #1b222c;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+  gap: 24px;
+}
+.pet-description {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+/* Por defecto, oculto */
+.pet-type input {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* Visible cuando hay hover en el padre */
+.pet-type:hover input {
+  opacity: 1;
+}
+
+/* Siempre visible si está checked */
+.pet-type:has(input:checked) input {
+  opacity: 1;
+}
+
+.pet-type:has(input:checked) {
+  border-width: 2px;
+  border-color: #82BC06;
+  background-color: #111D00;
+}
+.pet-type:has(input:checked) label {
+  color: #82BC06;
+}
+
+input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #1b222c;
+  border-radius: 100%;
+  background-color: #141921;
+  cursor: pointer;
+}
+input[type="radio"] {
+  accent-color: #82BC06;
+}
+
+.pet-type:hover {
+  border-width: 2px;
+  border-color: #82BC06;
+  background-color: #111D00;
+}
+
+.pet-icon {
+  font-size: 6rem;
+  transition: transform 0.2s ease;
+}
+.pet-type:hover .pet-icon {
+  transform: scale(1.2);
+}
+.pet-type label {
+  color: #677892;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+.pet-type:hover label {
+  color: #82BC06;
+}
+
+.main-button {
+  padding: 12px 24px;
+  background-color: #82BC06;
+  color: #0D1117;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.main-button:hover {
+  background-color: #A8F20B;
+  border: 2px solid #f0ffcf;
+}
+
+/*Seccion de ataque*/
+.attack-section {
+  padding: 32px;
+  border: 1px solid #29313D;
+  background-color: #141921;
+  border-radius: 32px;
+  width: 80%;
+  height: auto;
+  display: inline-block ;
 }
