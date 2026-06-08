@@ -173,5 +173,50 @@ input[type="radio"] {
   border-radius: 32px;
   width: 80%;
   height: auto;
-  display: inline-block ;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+
+.buttons-group {
+  display: flex;
+  gap: 32px;
+}
+.attack-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background-color: #141921;
+  border: 1px solid #29313D;
+  color: #82BC06;
+  border-radius: 24px;
+  height: 240px;
+  width: 240px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.attack-button .attack-icon {
+  font-size: 6rem;
+  transition: transform 0.2s ease;
+}
+.fire:hover {
+  background-color: #1d0e00;
+  border-width: 2px;
+  border-color: #e97a03;
+}
+.water:hover {
+  background-color: #00091d;
+  border-width: 2px;
+  border-color: #0676bc;
+}
+.earth:hover {
+  background-color: #111D00;
+  border-width: 2px;
+  border-color: #82BC06;
+}
+.attack-button:hover .attack-icon {
+  transform: scale(1.2);
 }

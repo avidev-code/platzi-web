@@ -70,17 +70,30 @@
     <section class="attack-section" id="seleccionar-ataque">
       <h2 class="pet-title">Elige tu ataque:</h2>
 
-      <p>Tu mascota <span id="mascota-jugador"></span> tiene <span class="vidas-jugador">3</span> vidas</p>
-      <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span class="vidas-enemigo">3</span> vidas</p>
-      <div id="ataques-jugador">
-        <button id="boton-fuego">🔥Fuego</button>
-        <button id="boton-agua">💧Agua</button>
-        <button id="boton-tierra">🌱Tierra</button>
+      <div class="buttons-group" id="ataques-jugador">
+        <button class="attack-button fire" id="boton-fuego">
+          <span class="attack-icon">🔥</span>
+          <span>Fuego</span>
+        </button>
+        
+        <button class="attack-button water" id="boton-agua">
+          <span class="attack-icon">💧</span>
+          <span>Agua</span>
+        </button>
+        
+        <button class="attack-button earth" id="boton-tierra">
+          <span class="attack-icon">🌱</span>
+          <span>Tierra</span>
+        </button>
+      </div>
+
+      <div class="pet-info">
+        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span class="vidas-jugador">3</span> vidas</p>
+        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span class="vidas-enemigo">3</span> vidas</p>
       </div>
     </section>
     
     <section id="mensajes">
-      
     </section>
 
     <section id="reiniciar">
