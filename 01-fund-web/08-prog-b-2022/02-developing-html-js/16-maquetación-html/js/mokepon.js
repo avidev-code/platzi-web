@@ -35,8 +35,8 @@ function seleccionarMascotaJugador() {
   sectionSeleccionarAtaque.style.display = 'flex'
 
   let inputHipodoge = document.getElementById('hipodoge')
-  let inputCapipepo = document.getElementById('Capipepo')
-  let inputRatigueya = document.getElementById('Ratigueya')
+  let inputCapipepo = document.getElementById('capipepo')
+  let inputRatigueya = document.getElementById('ratigueya')
   let spanMascotaJugador = document.getElementById('mascota-jugador')
   let spanMascotaEnemigo = document.getElementById('mascota-enemigo')
 
@@ -134,12 +134,19 @@ function revisarVidas() {
 }
 
 function crearMensaje(resultado) {
-  let sectionMensajes = document.getElementById('mensajes')
+  let sectionMensajes = document.getElementById('result')
+  let playerAttack = document.getElementById('player-attack')
+  let enemyAttack = document.getElementById('enemy-attack')
 
-  let parrafo = document.createElement('p')
-  parrafo.innerHTML = 'Tu mascota atacó con ' + ataqueJugador + ' y la mascota del enemigo atacó con ' + ataqueEnemigo + ' - ' + resultado
+  let newPlayerAttack = document.createElement('p')
+  let newEnemyAttack = document.createElement('p')
 
-  sectionMensajes.appendChild(parrafo)
+  sectionMensajes.innerHTML = resultado
+  newPlayerAttack.innerHTML = ataqueJugador
+  newEnemyAttack.innerHTML = ataqueEnemigo
+
+  playerAttack.appendChild(newPlayerAttack)
+  enemyAttack.appendChild(newEnemyAttack)
 }
 
 function crearMensajeFinal(resultadoFinal) {

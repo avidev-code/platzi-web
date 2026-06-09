@@ -23,8 +23,8 @@
 
     <section class="pet-section" id="seleccionar-mascota">
       <h2 class="pet-title">Elige tu mascota:</h2>
-        <div class="pets-section">
 
+        <div class="pets-section">
           <div class="pet-type">
             <div class="pet-icon">🦛</div>
               <div class="pet-description">
@@ -51,24 +51,22 @@
         </div>
 
         <button class="main-button" id="boton-mascota">Seleccionar ➡️</button>
-
-      <!--input type="radio" name="mascota" id="Langostelvis"/>
-      <input type="radio" name="mascota" id="Tucapalma"/>
-      <input type="radio" name="mascota" id="Pyros"/-->
-      <!--div class="button-group">
-        <button>Seleccionar</button>
-        <button>Hipodoge 🐶</button>
-        <button>Capipepo 🫏</button>
-        <button>Ratigueya 🐀</button>
-        <button>Langostelvis 🦞</button>
-        <button>Tucapalma 🐦</button>
-        <button>Pyros ❤️‍🔥</button>
-      </div-->
-
     </section>
 
     <section class="attack-section" id="seleccionar-ataque">
       <h2 class="pet-title">Elige tu ataque:</h2>
+
+      <div class="pet-info">
+          <div class="pet-player-info">
+            <p>Tu mascota es:
+            <span id="mascota-jugador"></span>
+            <span class="vidas-jugador"> 3</span> vidas</p>
+          </div>
+
+        <div class="pet-enemy-info">
+          <p>El contrincante es <span id="mascota-enemigo"></span><span class="vidas-enemigo"> 3</span> vidas</p>
+        </div>
+      </div>
 
       <div class="buttons-group" id="ataques-jugador">
         <button class="attack-button fire" id="boton-fuego">
@@ -87,18 +85,17 @@
         </button>
       </div>
 
-      <div class="pet-info">
-        <p>Tu mascota <span id="mascota-jugador"></span> tiene <span class="vidas-jugador">3</span> vidas</p>
-        <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span class="vidas-enemigo">3</span> vidas</p>
+      <div class="score-section" id="mensajes">
+        <section id="reiniciar">
+          <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+        <p class="message" id="result">Suerte compañero</p>
       </div>
-    </section>
-    
-    <section id="mensajes">
-    </section>
 
-    <section id="reiniciar">
-      <button id="boton-reiniciar">Reiniciar</button>
-    </section>
+      <div class="attack-container">
+        <div id="player-attack"></div>
+        <div id="enemy-attack"></div>
+      </div>
 
   </body>
 </html>

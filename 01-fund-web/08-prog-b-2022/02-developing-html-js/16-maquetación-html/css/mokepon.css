@@ -220,3 +220,78 @@ input[type="radio"] {
 .attack-button:hover .attack-icon {
   transform: scale(1.2);
 }
+
+.pet-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.pet-player-info, .pet-enemy-info {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.pet-player-info, .pet-enemy-info p {
+  color: #455368;
+  font-size: 1.2rem;
+}
+.pet-player-info .vidas-jugador, .pet-enemy-info .vidas-enemigo {
+  color: #A8F20B;
+  font-size: 1.2rem;
+}
+
+/*Styling message section*/
+.score-section {
+  padding: 16px;
+  width: 80%;
+  background-color: #29313D;
+  border-radius: 32px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.message {
+  color: #82BC06;
+  font-size: 1.6rem;
+}
+#boton-reiniciar {
+  padding: 12px 24px;
+  background-color: #82BC06;
+  color: #0D1117;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+#boton-reiniciar:hover {
+  background-color: #A8F20B;
+  border: 2px solid #f0ffcf;
+}
+.attack-container {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+.attack-container div {
+  color: #455368;
+  font-size: 1.2rem;
+  border: 1px solid #1b222c;
+  padding: 8px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+}
